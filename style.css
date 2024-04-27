@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.sideBar{
+        height:100%;
+        text-align: center;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color:hsl(257, 27%, 26%);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 30px;
+}
+.sideBar a{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 1rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sideBar p{
+    margin-bottom: 1rem;
+}
+.sideBar #closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 10%;
+}
+.sideBar-links{
+    margin: 2rem auto;
+    border-bottom: 1px solid grey;
+}
+.sideBar-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sideBar button{
+    font-family: "Poppins", sans-serif;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.sideBar-login{
+    background-color: inherit;
+    color: white;
+}
+.sign-up-btn{
+    background-color:hsl(180, 66%, 49%);
+    color: white;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.sign-up-btn:hover{
+    background-color: hsl(180, 66%, 69%);
+}
+
+header{
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+header button{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+.header-links{
+    display: flex;
+    gap: 8px;
+}
+header a{
+    text-decoration: none;
+    font-size: 14px;
+    color: hsl(0, 0%, 75%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+header a:hover{
+    color: hsl(255, 11%, 22%);
+    z-index: 999;
+}
+header .log-in{
+    background-color: white;
+}
+.header-btns{
+    display: flex;
+    gap: 1.5rem;
+}
+.logo{
+    width: 30%;
+}
+
+#menu{
+    display: none;
+}
+.first-section{
+    padding: 0.8rem 2rem;
+    margin: 1rem auto 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.first-section-text{
+    margin-top: 1rem;
+    width: 40%;
+}
+.first-section-text h1{
+    font-size: 2rem;
+    width: 250px;
+    margin-bottom: 0.5rem;
+}
+.first-section-text p{
+    font-size: 14px;
+    width: 80%;
+    color: hsl(0, 0%, 75%);
+}
+.first-section button{
+    width: 100px;
+ margin-top: 1rem;
+ padding: 5px;
+}
+.first-section img{
+    width: 70%;
+}
+.second-section{
+    text-align: center;
+    background-color: hsl(0, 0%, 75%);
+    padding:0.8rem  2rem 4rem;
+}
+.second-section .input-section{
+    padding: 2rem;
+    background-image: url('bg-shorten-desktop.svg');
+    background-color:  hsl(260, 8%, 14%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:450px;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: -2.5rem;
+    z-index: 999;
+}
+.second-section .input-section input{
+    width: 300px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    gap: 0.5rem;
+}
+form input.error{
+    border: 2px solid hsl(0, 87%, 67%);
+}
+.input-error #errors{
+   color: hsl(0, 87%, 67%);
+   margin-top: 0.12rem;
+   display: none;
+   text-align: start;
+}
+.second-section .input-section button{
+    border-radius: 5px;
+    padding: 5px;
+}
+.second-section h3{
+    margin-top: 1.9rem;
+    color: hsl(260, 8%, 14%);
+}
+.second-section p{
+    width: 80%;
+    margin: auto;
+    margin-top: 0.5rem;
+    color: hsl(257, 27%, 26%);
+    font-weight: 500;
+}
+.grid-section{
+    padding: 0.8re 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.grid-section div{
+    background-color: white;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 300px;
+    height: fit-content;
+    text-align: start;
+    box-shadow: 2px 2px 2px grey;
+}
+.grid-section div img{
+    background-color: hsl(257, 27%, 26%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: -2.2rem;
+}
+.grid-section div h4{
+    color: hsl(260, 8%, 14%);
+    margin-top: 1rem;
+}
+.grid-section div p{
+    width: 100%;
+    color: hsl(257, 27%, 26%);
+}
+.grid-section  .detailed{
+    margin-top: 1.7rem;
+}
+.grid-section .customizable{
+    margin-top: 3rem;
+}
+
+.third-section{
+    text-align: center;
+    padding: 0.8rem 2rem;
+    background-image: url('bg-boost-desktop.svg');
+    background-color: hsl(257, 27%, 26%);
+}
+.third-section h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem auto 1rem;
+}
+.third-section button{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+footer{
+    background: hsl(260, 8%, 14%);
+    color: white;
+    padding: 0.8rem 2rem;}
+.footer{
+    background: hsl(260, 8%, 14%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+.footer-grid-section{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+margin-bottom: 0.5rem;
+}
+.footer-grid-section div{
+    margin-top: 1rem;
+}
+.footer-grid-section h5{
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+.footer-grid-section p{
+    margin-bottom: 0.2rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: hsl(180, 66%, 49%);
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.attribution { font-size: 17px; text-align: center; }
+    .attribution a { color: white; }
+
+
+
+
+@media(max-width:768px){
+    .grid-section{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .grid-section div{
+        margin: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .grid-section .detailed{
+        margin-top: 1rem;
+    }
+    .grid-section .customizable{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:500px){
+    .header-links{
+        display: none;
+    }
+    .logo{
+        width: 40%;
+    }
+    header button{
+        display: none;
+    }
+    #menu{
+        width: 20px;
+        display: block;
+    }
+    .first-section{
+        flex-direction: column-reverse;
+    }
+    .first-section-text{
+        width: 100%;
+        text-align: center;
+    }
+    .first-section-text h1{
+        width: 100%;
+        margin: auto;
+    }
+    .first-section-text p{
+        width: 100%;
+    }
+    .first-section img{
+        width: 70%;
+        margin: auto;
+    }
+    .second-section .input-section{
+        width: 300px;
+        text-align: start;
+    }
+    form{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        gap: 0.2rem;
+    }
+    .second-section .input-section input{
+        width: 250px;
+        margin: auto;
+        margin-top: -2.5rem;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.3rem;
+    }
+}
