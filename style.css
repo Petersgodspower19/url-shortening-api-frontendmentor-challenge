@@ -65,9 +65,9 @@ body{
 .sign-up-btn{
     background-color:hsl(180, 66%, 49%);
     color: white;
-    height: 4em;
+    height: 30px;
     border: none;
-    width: 14%;
+    width: 100px;
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -87,7 +87,7 @@ header{
     gap: 1.5rem;
 }
 header button{
-    width: 100px;
+    width: 200px;
     border: none;
     cursor: pointer;
 }
@@ -175,8 +175,11 @@ input{
 form{
     display: flex;
     justify-content: space-between;
-    text-align: start;
+     text-align: start;
     /* gap: 0.5rem; */
+}
+form button{
+    margin-top:10px;
 }
 form input.error{
     border: 2px solid hsl(0, 87%, 67%);
@@ -351,6 +354,7 @@ footer a:hover{
     }
     .first-section{
         flex-direction: column-reverse;
+        margin-bottom: 2rem;
     }
     .first-section-text{
         width: 100%;
@@ -362,6 +366,9 @@ footer a:hover{
     }
     .first-section-text p{
         width: 100%;
+    }
+    .first-section  button{
+        margin-bottom: 2rem;
     }
     .first-section img{
         width: 70%;
@@ -376,6 +383,10 @@ footer a:hover{
         justify-content: center;
         margin: auto;
         gap: 0.2rem;
+    }
+    form button{
+        margin: auto;
+        margin-top: 0.5rem;
     }
     .second-section .input-section input{
         width: 250px;
